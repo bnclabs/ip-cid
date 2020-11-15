@@ -1,0 +1,21 @@
+[package]
+name = "ip-cid"
+version = "0.1.0"
+description = "Content Identification in rust-lang"
+repository = "https://github.com/bnclabs/ip-cid"
+keywords = ["multiformats", "ipfs", "cid"]
+authors = ["prataprc <prataprc@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+documentation = "https://docs.rs/ip-cid/"
+edition = "2018"
+
+[dependencies]
+multiformats = { git = "http://github.com/bnclabs/multiformats" }
+digest = { version = "0.9", default-features = false }
+bs58 = "0.3.0"
+multibase = "0.8.0"
+ip-peerid = { git = "http://github.com/bnclabs/ip-peerid" }
+
+[dev-dependencies]
+sha2 = { version = "0.9", default-features = false }
